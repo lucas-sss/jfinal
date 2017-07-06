@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.onearth</groupId>
+  <artifactId>jfinal_test</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>jfinal_test Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+
+  <properties>
+    <jfinal-version>3.1</jfinal-version>
+    <mysql-version>5.1.38</mysql-version>
+    <log4j-version>1.2.16</log4j-version>
+    <c3p0-version>0.9.1.2</c3p0-version>
+    <lang3-version>3.4</lang3-version>
+    <jetty-version>8.1.8.v20121106</jetty-version>
+  </properties>
+
+
+
+  <dependencies>
+
+    <!-- jfinal唯一核心包 -->
+    <dependency>
+      <groupId>com.jfinal</groupId>
+      <artifactId>jfinal</artifactId>
+      <version>${jfinal-version}</version>
+    </dependency>
+
+    <!-- mysql数据库 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>${mysql-version}</version>
+    </dependency>
+
+    <!-- 日志 -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j-version}</version>
+    </dependency>
+
+    <!-- c3p0连接池 -->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>${c3p0-version}</version>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${lang3-version}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+    <!--<dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jetty-version}</version>
+    </dependency>-->
+
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>jfinal_test</finalName>
+  </build>
+</project>
