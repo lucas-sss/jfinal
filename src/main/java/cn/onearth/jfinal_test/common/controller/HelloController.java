@@ -9,6 +9,7 @@ public class HelloController extends Controller {
 
     public void index(){
 
-        renderText("hello world!");
+        render("index.jsp");
+        //renderText("hello world!");
     }
 }

@@ -1,6 +1,7 @@
 package cn.onearth.jfinal_test.common.config;
 
 import cn.onearth.jfinal_test.common.controller.HelloController;
+import cn.onearth.jfinal_test.common.controller.PhantomjsController;
 import com.jfinal.config.*;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
@@ -15,7 +16,10 @@ public class AllConfig extends JFinalConfig {
     }
 
     public void configRoute(Routes me) {
-        me.add("/hello", HelloController.class);
+        //me.setBaseViewPath("/jfinal");
+        //me.addInterceptor();
+        me.add("/hello", HelloController.class, "/");
+        me.add("/phantomjs", PhantomjsController.class, "/html");
     }
 
     public void configEngine(Engine me) {
