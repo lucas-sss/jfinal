@@ -5,10 +5,16 @@
 </head> 
 <body>
 	<a href="/phantomjs/preNextHtml" id='pageTest' >I am click</a>  </br>
+	<input name="离焦", id="testblur" value="离焦"></br>
+	<input name="无用测试", id="nouse" value="无用测试"></br>
 	<script>
 		$(function(){
 			$("#pageTest").click(function(){
 				alert('lalalala');
+			});
+
+			$("#testblur").blur(function(){
+				alert('blur is happen');
 			});
 		});
 	</script>
