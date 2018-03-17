@@ -6,3 +6,4 @@ ADD CONTENT
 双方内容都保留
 add pushed content
 
+测试远程修改和本地修改的冲突
