@@ -1,1 +1,2 @@
 TEST DEAL WITH CONFLICT
+test deal with conflict
