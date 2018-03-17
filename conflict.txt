@@ -1,4 +1,8 @@
 TEST DEAL WITH CONFLICT
 test deal with conflict
 
+
 ADD CONTENT
+双方内容都保留
+add pushed content
+
